@@ -1,1 +1,1 @@
-En esta pagina encontras todas las recetas que quieras con ingredientes de tu alacena
+¡Bienvenido a la Página de Recetas! Esta es una página web donde puedes encontrar y compartir tus recetas favoritas.
