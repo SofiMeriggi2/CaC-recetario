@@ -9,17 +9,17 @@
 </head>
 <body>
     <header>
-        <nav>
-            <img src="img/Cuchara & Sazón.png" class="img1">
-            <a href="">Home</a>
+        <div class="primerDiv">
+            <a href="index.html">
+                <img src="img/logo_trial.png" class="img1">
+            </a>
+            <nav class="separation">
             <div class="dropdown">
                 <a href="" class="dropbtn">Categorías</a>
                 <div class="dropdown-content">
-                    <a href="">Postres</a>
                     <a href="">Panadería</a>
                     <a href="">Pastelería</a>
-                    <a href="">Aves</a>
-                    <a href="">Carne</a>
+                    <a href="">Carnes</a>
                     <a href="">Pastas</a>
                     <a href="">Low cost</a>
                 </div>
@@ -27,26 +27,58 @@
             <div class="last-links">
                 <a href="">Recetas</a>
                 <span class="spacer"></span>
-                <a href="">Contacto</a>
+                <a href="">Escribinos</a>
             </div>
-
-            <form action="#" method="get">
-                <input type="search" id="search" name="q" placeholder="Search...">
+            </nav>
+            <form action="#" method="get" class="search_form">
+                <input type="search" id="search" name="q" placeholder="Busca tu receta">
                 <input type="submit" value="Search">
             </form>
-        </nav>
+        </div>
     </header>
-
     <main>
+        <div class="carousel">
+            <div class="carousel-item">
+                <a href="">
+                    <img src="img/bad_1.jpg" alt="Image 1">
+                </a>
+            </div>
+            <div class="carousel-item active">
+                <a href="">
+                    <img src="img/bad_2.jpg" alt="Image 2">
+                </a>
+            </div>
+        </div>
 
+        <br><br><br>
+
+        <div class="card-container">
+            <div class="card">
+                <a href="">
+                    <img src="img/pollo_al_horno_peruano_73603_orig.jpg" alt="Card 1">
+                    <h2>Pollo al horno</h2>
+                </a>
+            </div>
+            <div class="card">
+                <a href="">
+                    <img src="img/Tarta-de-verduras-grilladas-con-Queso-Untable-Por-Salut-Light.jpg" alt="Card 2">
+                    <h2>Tarta de verduras</h2>
+                </a>
+            </div>
+            <div class="card">
+                <a href="">
+                    <img src="img/cheesecake-facil-con-leche-condensada-2000-4160526441114bf3ad8f3409586a2c8a.jpg" alt="Card 3">
+                    <h2>Cheesecake de frutos rojos</h2>
+                </a>
+            </div>
+          </div>
+        <br><br>
     </main>
 
-    <aside>
-
-    </aside>
-
     <footer>
-
+        <p>Todos los derechos reservados</p>
+        <a href="#">Contactanos</a>
     </footer>
+
 </body>
 </html>
