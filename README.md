@@ -1,1 +1,1 @@
-¡Bienvenido a la Página de Recetas! Esta es una página web donde puedes encontrar y compartir tus recetas favoritas.
+¡Bienvenido a la Página de Recetas! Esta es una página web donde puedes encontrar y compartir tus recetas favoritas. Gracias
