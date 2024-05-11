@@ -1,83 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="icon" href="img/favicon.ico">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos.css" />
+    <link rel="icon" href="img/favicon.ico" />
     <title>Cuchara y Sazón</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="primerDiv">
-            <a href="index.html">
-                <img src="img/logo_trial.png" class="img1">
-            </a>
-            <nav class="separation">
-            <div class="dropdown">
-                <a href="" class="dropbtn">Categorías</a>
-                <div class="dropdown-content">
-                    <a href="">Panadería</a>
-                    <a href="">Pastelería</a>
-                    <a href="">Carnes</a>
-                    <a href="">Pastas</a>
-                    <a href="">Low cost</a>
-                </div>
-            </div>
-            <div class="last-links">
-                <a href="">Recetas</a>
-                <span class="spacer"></span>
-                <a href="">Escribinos</a>
-            </div>
-            </nav>
-            <form action="#" method="get" class="search_form">
-                <input type="search" id="search" name="q" placeholder="Busca tu receta">
-                <input type="submit" value="Search">
-            </form>
-        </div>
-    </header>
-    <main>
-        <div class="carousel">
-            <div class="carousel-item">
-                <a href="">
-                    <img src="img/bad_1.jpg" alt="Image 1">
-                </a>
-            </div>
-            <div class="carousel-item active">
-                <a href="">
-                    <img src="img/bad_2.jpg" alt="Image 2">
-                </a>
-            </div>
-        </div>
-
-        <br><br><br>
-
-        <div class="card-container">
-            <div class="card">
-                <a href="">
-                    <img src="img/pollo_al_horno_peruano_73603_orig.jpg" alt="Card 1">
-                    <h2>Pollo al horno</h2>
-                </a>
-            </div>
-            <div class="card">
-                <a href="">
-                    <img src="img/Tarta-de-verduras-grilladas-con-Queso-Untable-Por-Salut-Light.jpg" alt="Card 2">
-                    <h2>Tarta de verduras</h2>
-                </a>
-            </div>
-            <div class="card">
-                <a href="">
-                    <img src="img/cheesecake-facil-con-leche-condensada-2000-4160526441114bf3ad8f3409586a2c8a.jpg" alt="Card 3">
-                    <h2>Cheesecake de frutos rojos</h2>
-                </a>
+      <div class="primerDiv">
+        <a href="index.html">
+          <img src="img/logo_trial.png" class="img1" />
+        </a>
+        <nav class="separation">
+          <div class="dropdown">
+            <a href="" class="dropbtn">Categorías</a>
+            <div class="dropdown-content">
+              <a href="">Panadería</a>
+              <a href="">Pastelería</a>
+              <a href="">Carnes</a>
+              <a href="">Pastas</a>
+              <a href="">Low cost</a>
             </div>
           </div>
-        <br><br>
+          <div class="last-links">
+            <a href="">Recetas</a>
+            <span class="spacer"></span>
+            <a href="">Escribinos</a>
+          </div>
+        </nav>
+        <form action="#" method="get" class="search_form">
+          <input
+            type="search"
+            id="search"
+            name="q"
+            placeholder="Busca tu receta"
+          />
+          <input type="submit" value="Search" />
+        </form>
+      </div>
+    </header>
+    <main>
+      <div class="carousel">
+        <input
+          type="radio"
+          class="controller"
+          name="slider"
+          id="Img 1"
+          checked
+        />
+        <div class="carousel-item">
+          <a href="">
+            <img src="img/Img 1.jpg" alt="Image 1" />
+          </a>
+        </div>
+
+        <input type="radio" class="controller" name="slider" id="Img 2" />
+        <div class="carousel-item">
+          <a href="">
+            <img src="img/Img 2.jpg" alt="Image 2" />
+          </a>
+        </div>
+
+        <input type="radio" class="controller" name="slider" id="Img 3" />
+        <div class="carousel-item">
+          <a href="">
+            <img src="img/Img 3.jpg" alt="Image 3" />
+          </a>
+        </div>
+
+        <input type="radio" class="controller" name="slider" id="Img 4" />
+        <div class="carousel-item">
+          <a href="">
+            <img src="img/Img 4.jpg" alt="Image 4" />
+          </a>
+        </div>
+
+        <input type="radio" class="controller" name="slider" id="Img 5" />
+        <div class="carousel-item">
+          <a href="">
+            <img src="img/Img 5.jpg" alt="Image 5" />
+          </a>
+        </div>
+
+        <input type="radio" class="controller" name="slider" id="Img 6" />
+        <div class="carousel-item">
+          <a href="">
+            <img src="img/Img 6.jpg" alt="Image 6" />
+          </a>
+        </div>
+      </div>
+      <div class="carousel-buttons">
+        <label for="Img 1"></label>
+        <label for="Img 2"></label>
+        <label for="Img 3"></label>
+        <label for="Img 4"></label>
+        <label for="Img 5"></label>
+        <label for="Img 6"></label>
+      </div>
+
+      <br /><br /><br />
+
+      <div class="card-container">
+        <div class="card">
+          <a href="">
+            <img src="img/pollo_al_horno_peruano_73603_orig.jpg" alt="Card 1" />
+            <h2>Pollo al horno</h2>
+          </a>
+        </div>
+        <div class="card">
+          <a href="">
+            <img
+              src="img/Tarta-de-verduras-grilladas-con-Queso-Untable-Por-Salut-Light.jpg"
+              alt="Card 2"
+            />
+            <h2>Tarta de verduras</h2>
+          </a>
+        </div>
+        <div class="card">
+          <a href="">
+            <img
+              src="img/cheesecake-facil-con-leche-condensada-2000-4160526441114bf3ad8f3409586a2c8a.jpg"
+              alt="Card 3"
+            />
+            <h2>Cheesecake de frutos rojos</h2>
+          </a>
+        </div>
+      </div>
+      <br /><br />
     </main>
     <footer>
-        <p>Todos los derechos reservados</p>
-        <a href="#">Contactanos</a>
+      <p>Todos los derechos reservados</p>
+      <a href="#">Contactanos</a>
     </footer>
-
-</body>
+  </body>
 </html>
