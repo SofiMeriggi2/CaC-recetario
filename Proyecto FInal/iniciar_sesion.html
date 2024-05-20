@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilos2.css">
     <link rel="icon" href="img/favicon.ico">
     <title>Cuchara y Sazón</title>
 
@@ -36,7 +36,7 @@
                         </div>
                     </div>
                     <div class="last-links">
-                        <a href="#">Quienes Somos</a>
+                        <a href="contacto.html">Quienes Somos</a>
                         <span class="spacer"></span>
                         <a href="iniciar_sesion.html">Iniciar Sesion</a>
                     </div>
@@ -52,15 +52,25 @@
 
     <main>
         <section class="container">
-            <form action="">
-                <label for="usuario">Usuario:</label>
-                <input type="usuario" name="usuario" placeholder="ingrese su usuario">
-                <label for="clave" >Contraseña</label>
-                <input type="password" name="clave" placeholder="ingrese su contraseña">
-
-                <a href=""><button>Ingresar</button></a>
-                <a href="registrate.html" style="color: blue;">Registrate!</a>
-            </form>
+            <div class="container-form">
+                <h1>Iniciar Sesion: </h1>
+                <form action="" class="form-registro">
+                    <label for="usuario">Usuario:
+                        <input type="usuario" name="usuario" placeholder="Ingrese su usuario">
+                    </label>
+                
+                    <label for="clave">Contraseña
+                        <input type="password" name="clave" placeholder="Ingrese su contraseña">
+                    </label>
+                
+                    <br><br>
+                    <div id="button-inicio">
+                        <button type="submit">Ingresar</button>
+                        <br><br><br>
+                        <a href="registrate.html" style="color: blue;">Registrate!</a>
+                    </div>
+                </form>
+            </div>
         </section>
 
 

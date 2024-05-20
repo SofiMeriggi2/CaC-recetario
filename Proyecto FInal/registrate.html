@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilos2.css">
     <link rel="icon" href="img/favicon.ico">
     <title>Cuchara y Sazón</title>
 
@@ -15,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
     <header>
         <section class="container">
@@ -34,7 +36,7 @@
                         </div>
                     </div>
                     <div class="last-links">
-                        <a href="">Quienes Somos</a>
+                        <a href="contacto.html">Quienes Somos</a>
                         <span class="spacer"></span>
                         <a href="iniciar_sesion.html">Iniciar Sesion</a>
                     </div>
@@ -46,61 +48,66 @@
         </section>
 
     </header>
-    
+
     <main>
         <section class="container">
-        <h1>Formulario de Registro</h1>
-        
-        <form action="" id="form-registro" method="get">
-            <div>
-                <label for="name">Nombre: </label>
-                <input type="name" placeholder="Ingrese su nombre">
-                <br><br>
-                <label for="lastname">Apellido: </label>
-                <input type="lastname" placeholder="Ingrese su apellido">
-                <br><br>
-                <label for="email">Email: </label>
-                <input type="email" placeholder="Ingrese su Correo">
-                <br><br>
+            <div class="container-form">
+                <h1>Formulario de Registro</h1>
 
+                <form action="" class="form-registro" method="get">
+
+                    <label for="name">Nombre: 
+                    <input type="name" placeholder="Ingrese su nombre">
+                    </label>
+                    <br>
+                    <label for="lastname">Apellido: 
+                    <input type="lastname" placeholder="Ingrese su apellido">
+                    </label>
+                    <br>
+                    <label for="email">Email: 
+                    <input type="email" placeholder="Ingrese su Correo">
+                    </label>
+                    <br>
+                    <label for="password">Contraseña: 
+                    <input type="password" placeholder="Ingrese su Clave">
+                    </label>
+                    <br>
+
+                    <label for="country"> Pais:
+                        <select name="country">
+                            <option value="">Seleccione su Pais</option>
+                            <option value="Ar">Argentina</option>
+                            <option value="Br">Brasil</option>
+                            <option value="Ur">Uruguay</option>
+                            <option value="Pa">Paraguay</option>
+                            <option value="Bo">Bolivia</option>
+                            <option value="Ch">Chile</option>
+                            <option value="Ot">Otro</option>
+                            <br>
+                        </select>
+                    </label>
+                    <br>
+
+                    <a href="index.html"><input type="submit" value="Guardar"></a>
+                    <a href="index.html"><input type="button" value="Cancelar"></a>
+
+                </form>
             </div>
-            <div>
-                <label for="country" id="country">
-                    <select name="country" id="country">
-                        <option value="">Seleccione su Pais</option>
-                        <option value="Ar">Argentina</option>
-                        <option value="Br">Brasil</option>
-                        <option value="Ur">Uruguay</option>
-                        <option value="Pa">Paraguay</option>
-                        <option value="Bo">Bolivia</option>
-                        <option value="Ch">Chile</option>
-                        <option value="Ot">Otro</option>
-                        <br><br>
 
-                    </select>
-                </label>
-            </div>
-            <br>
-            
-            <a href="index.html"><input type="submit" value="Guardar Datos"></a>
-            <a href="index.html"><input type="submit" value="Cancelar"></a>
-            
 
-        </form>
         </section>
-
-    </section>
     </main>
     <footer>
         <div class="redes-sociales">
-        <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
         </div>
-    
+
         <p>&copy; Todos los derechos reservados</p>
-        
+
     </footer>
 
 </body>
+
 </html>
