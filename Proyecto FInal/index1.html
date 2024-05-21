@@ -15,16 +15,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
     <header>
-        <section class="container">
-            <div class="primerDiv">
+        <section class="container">        
+            <nav class="primerDiv">
                 <a href="index.html">
                     <img src="img/logo_trial.png" class="img1">
-                </a>
-                <nav class="separation">
+                </a>     
+                
+                <!--Navegador de Escritorio-->
+                <div class="last-links desktop-nav">
                     <div class="dropdown">
                         <a href="" class="dropbtn">Categorías</a>
                         <div class="dropdown-content">
@@ -34,18 +40,35 @@
                             <a href="">Pastas</a>
                             <a href="">Low cost</a>
                         </div>
-                    </div>
-                    <div class="last-links">
-                        <a href="contacto.html">Quienes Somos</a>
-                        <span class="spacer"></span>
-                        <a href="iniciar_sesion.html">Iniciar Sesion</a>
+                    </div>                
+                    <a href="contacto.html">Quienes Somos</a>
+                    <!-- <span class="spacer"></span> -->
+                    <a href="iniciar_sesion.html">Iniciar Sesion</a>        
+                </div>
 
-                    </div>
-
-
-                </nav>
-            </div>
-
+                <!--Menu Hamburgueza-->
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="menu-toggle-icon">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <div class="last-links mobile-nav">
+                    <div class="dropdown">
+                        <a href="" class="dropbtn">Categorías</a>
+                        <div class="dropdown-content">
+                            <a href="">Panadería</a>
+                            <a href="">Pastelería</a>
+                            <a href="">Carnes</a>
+                            <a href="">Pastas</a>
+                            <a href="">Low cost</a>
+                        </div>
+                    </div>                
+                    <a href="contacto.html">Quienes Somos</a>
+                    <!-- <span class="spacer"></span> -->
+                    <a href="iniciar_sesion.html">Iniciar Sesion</a>        
+                </div>
+        
+            </nav>        
+        
         </section>
 
     </header>
@@ -56,13 +79,15 @@
 
 
         <section class="container">
-            <div class="items-search" >
-            <h1>Recetas 100% Faciles</h1>
-            <form action="#" method="get" class="search_form">
-                <input type="text" id="search" name="search" placeholder="Busca tu receta">
-                <input type="submit" value="Search">
-            </form>
+            <div class="items-search">
+                <h1>Recetas 100% Faciles</h1>
+                <form action="#" method="get" class="search_form">
+                    <input type="text" id="search" name="search" placeholder="Busca tu receta">
+                    <input type="submit" value="Search">
+                </form>
             </div>
+
+
             <!--Carrucel-->
 
             <div class="carousel">
@@ -119,7 +144,7 @@
 
 
 
-       
+
 
             <br><br><br>
             <section class="container"></section>
@@ -157,6 +182,10 @@
 
     </main>
     <footer>
+        <a href="">Terminos y condiciones</a>
+        <a href="">Preguntas Frecuentes</a>
+        <a href="">Ayuda</a>
+        <a href=""><i class="fas fa-question-circle"></i></a>
         <div class="redes-sociales">
             <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
             <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
@@ -164,6 +193,8 @@
         </div>
 
         <p>&copy; Todos los derechos reservados</p>
+
+
 
     </footer>
 

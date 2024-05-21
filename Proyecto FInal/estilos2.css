@@ -1,15 +1,29 @@
 * {
     box-sizing: border-box; 
+    margin:0;
+    font-family: 'Roboto', sans-serif;
     /*para que los estilos no crezcan mas de lo dicho */
 }
 
 h1{
     text-align: center;
+    font-size: 4em;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2{
+    text-align: center;
+    font-size: 2em;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 100;
+    font-style: normal;
 }
 
 body{
-    margin:0;
-    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -17,10 +31,12 @@ body{
     max-width: 1350px;
     margin:auto;
     padding: 20px;
-    justify-content: center;
+     /*justify-content: center;
     width: 100%;
-    height: 100%;
-    padding: 20px;
+    height: 100%; */
+    flex: 1;
+    
+ 
 }
 
 
@@ -40,13 +56,14 @@ header {
     height: 15vh;
     width: auto;
     border-radius: 50%;
+    /* padding-right: 10px; */
 }
 
 .primerDiv {
     display: flex;
     font-size: 2em;
     align-items: center;
-    justify-content: space-evenly;
+  
 }
 
 /* .separation { 
@@ -59,9 +76,9 @@ header {
 
 .last-links {
     display: flex;
-    /* padding-top: 10px; */
-    padding-left: 6em;
-    
+    padding: 0 50px;
+    justify-content: space-between;
+    gap: 15vw
 }
 
 .last-links a {
@@ -130,10 +147,46 @@ a {
     font-size: 1em;
 }
 
-.spacer {
+/*-- Menu Hamburguesa --*/
+
+.menu-toggle{
+    display: none;
+}
+
+.menu-toggle-icon{
+    display: none;
+    cursor: pointer;
+    color: rgb(37, 78, 37);
+    font-size: 30px;
+}
+
+.mobile-nav{
+    display: none;
+    flex-direction: column;
+    background-color: rgb(150, 208, 150);
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 20px;
+}
+
+.menu-toggle:checked~.mobile-nav{
+    display: flex;
+}
+
+@media(max-width: 760px){
+    .desktop-nav{
+        display: none;
+    }
+    .menu-toggle{
+        display: block;
+    }
+}
+
+/* .spacer {
     width: 16px;
     padding-left: 6em;
-}
+} */
 
 /*-- Boton de Busqueda --*/
 
@@ -141,7 +194,8 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 50vw;
+    align-items: center;
+    width: 100vw;
     height: 20vh;
     
 }
@@ -274,14 +328,17 @@ footer {
     color: white;
     background-color: rgb(37, 78, 37);
     padding: 25px;
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.5em;
+    /* display: flex;
+    justify-content: space-between; */
+    font-size: 14px;
+    text-align: center;
+    list-style: 24px;
+    
 }
 
 footer a {
     color: white;
-    font-size: 1.5em;
+    margin: 0 10px;
 }
 
 footer a:hover {
@@ -289,7 +346,7 @@ footer a:hover {
 }
 
 .redes-sociales{
-    justify-content: left;
+    margin: 20px 0;
 }
 
 
