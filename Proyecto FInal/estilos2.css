@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box; 
+    padding: 0;
     margin:0;
     font-family: 'Roboto', sans-serif;
     /*para que los estilos no crezcan mas de lo dicho */
@@ -11,6 +12,7 @@ h1{
     font-family: "Poetsen One", sans-serif;
     font-weight: 400;
     font-style: normal;
+    margin-bottom: 50px;
 }
 
 h2{
@@ -31,10 +33,10 @@ body{
     max-width: 1350px;
     margin:auto;
     padding: 20px;
-     /*justify-content: center;
+    justify-content: center;
     width: 100%;
-    height: 100%; */
-    flex: 1;
+    height: 100%;
+    /* flex: 1; */
     
  
 }
@@ -54,7 +56,7 @@ header {
 
 .img1 {
     height: 15vh;
-    width: auto;
+    width: 15vh;
     border-radius: 50%;
     /* padding-right: 10px; */
 }
@@ -62,6 +64,7 @@ header {
 .primerDiv {
     display: flex;
     font-size: 2em;
+    justify-content: center;
     align-items: center;
   
 }
@@ -76,7 +79,7 @@ header {
 
 .last-links {
     display: flex;
-    padding: 0 50px;
+    padding: 0 10px;
     justify-content: space-between;
     gap: 15vw
 }
@@ -149,39 +152,63 @@ a {
 
 /*-- Menu Hamburguesa --*/
 
-.menu-toggle{
+/* Ocultar el checkbox */
+.menu-toggle {
     display: none;
 }
 
-.menu-toggle-icon{
+/* Estilo del icono de menú */
+.menu-toggle-icon {
     display: none;
     cursor: pointer;
     color: rgb(37, 78, 37);
     font-size: 30px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    left: 20px
 }
 
-.mobile-nav{
+/* Estilo del menú móvil */
+.mobile-nav {
     display: none;
     flex-direction: column;
-    background-color: rgb(150, 208, 150);
+    background-color: rgb(153, 201, 153);
     width: 100%;
     position: absolute;
+    top: 60px; /* Ajustado para que no quede justo debajo del ícono */
     left: 0;
-    top: 20px;
+    z-index: 1000;
 }
 
-.menu-toggle:checked~.mobile-nav{
+.mobile-nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    
+}
+
+.mobile-nav a:hover {
+    background-color:  #bbe1bd;
+    
+}
+
+/* Mostrar el menú móvil cuando el checkbox está marcado */
+.menu-toggle:checked + .menu-toggle-icon + .mobile-nav {
     display: flex;
 }
 
-@media(max-width: 760px){
-    .desktop-nav{
+/* Estilos específicos para pantallas pequeñas */
+@media (max-width: 760px) {
+    .desktop-nav {
         display: none;
     }
-    .menu-toggle{
+    .menu-toggle-icon {
         display: block;
     }
 }
+
+
 
 /* .spacer {
     width: 16px;
@@ -195,19 +222,37 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 20vh;
+    /* width: 100%;
+    height: 20vh; */
     
 }
 
-input[type="search"] {
-    padding: 0.5rem;
-    font-size: 1rem;
-    border: 2px solid #ccc;
-    border-radius: 0.25rem;
-    width: 50%;
+#search {
+    width: 70vw;
+    height: 8vh;
+    border: 1px solid #ccc;
+    border-radius: 4px; /* Esquinas redondeadas */
+    border-color: #45a049;
+    padding: 0 1rem; /* Espacio interno para el texto */
+    font-size: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transición suave */
 }
 
+#search:focus {
+    border-color: #007BFF; /* Cambia el color del borde al enfocarse */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25); /* Sombra más intensa al enfocarse */
+    outline: none; /* Quita el contorno por defecto */
+}
+
+#a-search{
+    font-size: 2rem;
+}
+
+#a-search :hover {
+    transform: scale(1.5);
+    
+}
 
 
 input[type="submit"] {
@@ -303,6 +348,7 @@ input[type='radio'].controller:checked
     text-align: center;
     padding: 20px;
     margin-left: 5px;
+    
 }
 
 .card img {
@@ -320,6 +366,10 @@ input[type='radio'].controller:checked
     margin-bottom: 0;
 }
 
+.card :hover {
+    transform: scale(1.5);   
+    
+}
 
 /*-- Footer --*/
 
@@ -421,5 +471,10 @@ label {
     padding: 15px; 
     font-size: 18px;    
    
+}
+
+
+@media screen {
+    
 }
 
