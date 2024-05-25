@@ -1,0 +1,480 @@
+* {
+    box-sizing: border-box; 
+    padding: 0;
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+    /*para que los estilos no crezcan mas de lo dicho */
+}
+
+h1{
+    text-align: center;
+    font-size: 4em;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 50px;
+}
+
+h2{
+    text-align: center;
+    font-size: 2em;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.container{
+    max-width: 1350px;
+    margin:auto;
+    padding: 20px;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    /* flex: 1; */
+    
+ 
+}
+
+
+header {
+    background-color: rgb(255, 255, 255);
+    margin-top: 0;
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    height: 20vh;
+
+}
+
+.img1 {
+    height: 15vh;
+    width: 15vh;
+    border-radius: 50%;
+    /* padding-right: 10px; */
+}
+
+.primerDiv {
+    display: flex;
+    font-size: 2em;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+/* .separation { 
+    padding-left: 2em;
+    display: flex;   
+    
+} */
+
+
+
+.last-links {
+    display: flex;
+    padding: 0 10px;
+    justify-content: space-between;
+    gap: 15vw
+}
+
+.last-links a {
+    color: rgb(37, 78, 37);
+    font-family: Arial,sans-serif;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.last-links a:hover {
+    color: #4CAF50;
+}
+
+/*-- Menu desplegable --*/ 
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+    text-align: left;
+}
+
+.dropdown .dropbtn {
+    font-size: 1em;
+    border: none;
+    outline: none;
+    color: rgb(37, 78, 37);
+    /* padding: 8px 10px; */
+    /* font-family: Arial,sans-serif; */
+    margin: 0;
+    display: flex;
+}
+
+.dropdown .dropbtn:hover {
+    color: #4CAF50;
+}
+
+.dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-size: 0.5em;
+}
+
+.dropdown .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 8px 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    display: flex;
+}
+
+.dropdown .dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    font-size: 1em;
+}
+
+/*-- Menu Hamburguesa --*/
+
+/* Ocultar el checkbox */
+.menu-toggle {
+    display: none;
+}
+
+/* Estilo del icono de menú */
+.menu-toggle-icon {
+    display: none;
+    cursor: pointer;
+    color: rgb(37, 78, 37);
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    left: 20px
+}
+
+/* Estilo del menú móvil */
+.mobile-nav {
+    display: none;
+    flex-direction: column;
+    background-color: rgb(153, 201, 153);
+    width: 100%;
+    position: absolute;
+    top: 60px; /* Ajustado para que no quede justo debajo del ícono */
+    left: 0;
+    z-index: 1000;
+}
+
+.mobile-nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    
+}
+
+.mobile-nav a:hover {
+    background-color:  #bbe1bd;
+    
+}
+
+/* Mostrar el menú móvil cuando el checkbox está marcado */
+.menu-toggle:checked + .menu-toggle-icon + .mobile-nav {
+    display: flex;
+}
+
+/* Estilos específicos para pantallas pequeñas */
+@media (max-width: 760px) {
+    .desktop-nav {
+        display: none;
+    }
+    .menu-toggle-icon {
+        display: block;
+    }
+}
+
+
+
+/* .spacer {
+    width: 16px;
+    padding-left: 6em;
+} */
+
+/*-- Boton de Busqueda --*/
+
+.search_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%;
+    height: 20vh; */
+    
+}
+
+#search {
+    width: 70vw;
+    height: 8vh;
+    border: 1px solid #ccc;
+    border-radius: 4px; /* Esquinas redondeadas */
+    border-color: #45a049;
+    padding: 0 1rem; /* Espacio interno para el texto */
+    font-size: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transición suave */
+}
+
+#search:focus {
+    border-color: #007BFF; /* Cambia el color del borde al enfocarse */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25); /* Sombra más intensa al enfocarse */
+    outline: none; /* Quita el contorno por defecto */
+}
+
+#a-search{
+    font-size: 2rem;
+}
+
+#a-search :hover {
+    transform: scale(1.5);
+    
+}
+
+
+input[type="submit"] {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: rgb(37, 78, 37);
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    display: flex;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/*-- Carrucel --*/
+
+.carousel{
+    display: flex;
+    flex-direction: row;
+    animation: slide 5s infinite alternate;
+    width: 100%;
+    justify-content: center;
+}
+
+.carousel-item.active {
+    opacity: 1;
+}
+
+.carousel-item  {
+    opacity: 1;
+}
+
+.carousel-buttons{
+    padding: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    bottom: 50px;
+    gap: 10px;
+}
+
+.carousel-buttons label{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(205, 36, 36);
+    border-radius: 50%;
+    opacity: 0.5;
+    cursor: pointer;
+    z-index: 1;
+    transition: 300ms ease-in-out;
+} 
+
+.carousel-buttons label:hover{
+    scale: 1.2;
+    opacity: 1;
+}
+
+input[type='radio'].controller:checked
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+/*-- Card --*/
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    flex-basis: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px;
+    margin-left: 5px;
+    
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+.card p {
+    margin-bottom: 0;
+}
+
+.card :hover {
+    transform: scale(1.5);   
+    
+}
+
+/*-- Footer --*/
+
+
+footer {
+    color: white;
+    background-color: rgb(37, 78, 37);
+    padding: 25px;
+    /* display: flex;
+    justify-content: space-between; */
+    font-size: 14px;
+    text-align: center;
+    list-style: 24px;
+    
+}
+
+footer a {
+    color: white;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: grey;
+}
+
+.redes-sociales{
+    margin: 20px 0;
+}
+
+
+
+/*-----Registrate -------*/
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    flex-direction: column;
+    height: 90vh;
+    background-image: url('/Proyecto Final/img/capeletis.jpg'); /*para vincular con una imagen de afuera*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+/*-----------------------Iniciar Sesion ------------------*/
+.form-registro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+}
+button[type="submit"] {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: rgb(37, 78, 37);
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    display: flex;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+#button-inicio{
+    display: flex;
+    align-items: center;
+   
+    
+}
+
+
+.container-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+
+}
+
+
+label {
+    margin-bottom: 15px;
+    font-weight: bold;
+    width: 100%;
+    padding: 15px; 
+    font-size: 18px;    
+   
+}
+
+
+@media screen {
+    
+}
+
