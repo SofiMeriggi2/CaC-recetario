@@ -3,7 +3,7 @@
     padding: 0;
     margin:0;
     font-family: 'Roboto', sans-serif;
-    /*para que los estilos no crezcan mas de lo dicho */
+  
 }
 
 h1{
@@ -26,6 +26,7 @@ h2{
 body{
     display: flex;
     flex-direction: column;
+
 }
 
 
@@ -33,11 +34,11 @@ body{
     max-width: 1350px;
     margin:auto;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     width: 100%;
-    height: 100%;
-    /* flex: 1; */
-    
+    height: 100%;   
  
 }
 
@@ -68,13 +69,6 @@ header {
     align-items: center;
   
 }
-
-/* .separation { 
-    padding-left: 2em;
-    display: flex;   
-    
-} */
-
 
 
 .last-links {
@@ -179,6 +173,7 @@ a {
     top: 60px; /* Ajustado para que no quede justo debajo del ícono */
     left: 0;
     z-index: 1000;
+   
 }
 
 .mobile-nav a {
@@ -198,7 +193,7 @@ a {
     display: flex;
 }
 
-/* Estilos específicos para pantallas pequeñas */
+/* Estilos específicos para celulares */
 @media (max-width: 760px) {
     .desktop-nav {
         display: none;
@@ -206,14 +201,52 @@ a {
     .menu-toggle-icon {
         display: block;
     }
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* width: 100%; */
+        margin: 0;
+    }
+
+    .card-container{
+        display: flex;
+
+        flex-wrap: wrap;
+    }
+    
+    footer div{
+    
+        display: flex;
+        flex-direction: column;        
+
+    }
 }
 
 
+/* Estilos específicos para tablet */
+@media screen and (max-width: 1070px) {
 
-/* .spacer {
-    width: 16px;
-    padding-left: 6em;
-} */
+    .img1 {
+        height: 12vh;
+        width: 12vh;
+    }
+
+    .primerDiv {
+        font-size: 1.5em;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+
+    .last-links {
+        gap: 5vw;
+        padding: 0;
+    }
+
+}
 
 /*-- Boton de Busqueda --*/
 
@@ -222,8 +255,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* width: 100%;
-    height: 20vh; */
+
     
 }
 
@@ -338,16 +370,17 @@ input[type='radio'].controller:checked
 
 .card-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly
 }
 
 .card {
-    flex-basis: calc(33.33% - 20px);
+    /* flex-basis: calc(33.33% - 20px); se vuelvo desproporcional la distribucion de las card*/
     margin-bottom: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     text-align: center;
     padding: 20px;
-    margin-left: 5px;
+    /* margin-left: 5px; le quito xq me genera un margen al costado cuando achico la pantalla */ 
+    width: 300px; /*agrego un ancho por defecto para todas las cartas*/
     
 }
 
@@ -378,8 +411,6 @@ footer {
     color: white;
     background-color: rgb(37, 78, 37);
     padding: 25px;
-    /* display: flex;
-    justify-content: space-between; */
     font-size: 14px;
     text-align: center;
     list-style: 24px;
@@ -401,7 +432,7 @@ footer a:hover {
 
 
 
-/*-----Registrate -------*/
+/*-----Registrate layout -------*/
 
 #hero{
     display: flex;
@@ -416,20 +447,49 @@ footer a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    width: 100%;
 
 }
 
 /*-----------------------Iniciar Sesion ------------------*/
-.form-registro{
+.container-form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1em;
-    font-weight: bold;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
 }
+
+.form-registro {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-registro label{  
+    margin-bottom: 15px;
+    font-weight: bold;
+    width: 100%;
+    padding: 15px; 
+    font-size: 18px;   
+
+}
+
+.form-registro input{
+    width: 100%;
+    padding: 5px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
 button[type="submit"] {
     padding: 0.5rem 1rem;
     font-size: 1rem;
@@ -437,8 +497,8 @@ button[type="submit"] {
     color: white;
     border: none;
     border-radius: 0.25rem;
-    cursor: pointer;
     display: flex;
+    
 }
 
 button[type="submit"]:hover {
@@ -447,34 +507,13 @@ button[type="submit"]:hover {
 
 #button-inicio{
     display: flex;
+    justify-content: center;
+    align-items: center;  
+    
+}
+
+iframe{
+    display: flex;
+    justify-content: center;
     align-items: center;
-   
-    
 }
-
-
-.container-form {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
-
-}
-
-
-label {
-    margin-bottom: 15px;
-    font-weight: bold;
-    width: 100%;
-    padding: 15px; 
-    font-size: 18px;    
-   
-}
-
-
-@media screen {
-    
-}
-
