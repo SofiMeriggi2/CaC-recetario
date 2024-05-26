@@ -19,12 +19,14 @@
 
 <body>
     <header>
-        <section class="container">
-            <div class="primerDiv">
-                <a href="index.html">
+        <section class="container">        
+            <nav class="primerDiv">
+                <a href="index1.html">
                     <img src="img/logo_trial.png" class="img1">
-                </a>
-                <nav class="separation">
+                </a>     
+                
+                <!--Navegador de Escritorio-->
+                <div class="last-links desktop-nav">
                     <div class="dropdown">
                         <a href="" class="dropbtn">Categorías</a>
                         <div class="dropdown-content">
@@ -34,21 +36,38 @@
                             <a href="">Pastas</a>
                             <a href="">Low cost</a>
                         </div>
-                    </div>
-                    <div class="last-links">
-                        <a href="contacto.html">Quienes Somos</a>
-                        <span class="spacer"></span>
-                        <a href="iniciar_sesion.html">Iniciar Sesion</a>
-                    </div>
+                    </div>                
+                    <a href="contacto.html">Quienes Somos</a>
+                    <!-- <span class="spacer"></span> -->
+                    <a href="iniciar_sesion.html">Iniciar Sesion</a>        
+                </div>
 
-
-                </nav>
-            </div>
-
+                <!-- Menu Hamburgueza-->
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="menu-toggle-icon">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <div class="last-links mobile-nav">
+                    <div class="dropdown">
+                        <a href="" class="dropbtn">Categorías</a>
+                        <div class="dropdown-content">
+                            <a href="">Panadería</a>
+                            <a href="">Pastelería</a>
+                            <a href="">Carnes</a>
+                            <a href="">Pastas</a>
+                            <a href="">Low cost</a>
+                        </div>
+                    </div>                
+                    <a href="contacto.html">Quienes Somos</a>
+                     <!-- <span class="spacer"></span>  -->
+                    <a href="iniciar_sesion.html">Iniciar Sesion</a>        
+                </div>
+         
+            </nav>        
+        
         </section>
 
     </header>
-
     <main>
         <section class="container">
             <div class="container-form">
