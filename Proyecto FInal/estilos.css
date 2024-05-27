@@ -3,7 +3,7 @@
     padding: 0;
     margin:0;
     font-family: 'Roboto', sans-serif;
-    /*para que los estilos no crezcan mas de lo dicho */
+  
 }
 
 h1{
@@ -26,6 +26,7 @@ h2{
 body{
     display: flex;
     flex-direction: column;
+
 }
 
 
@@ -33,11 +34,11 @@ body{
     max-width: 1350px;
     margin:auto;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     width: 100%;
-    height: 100%;
-    /* flex: 1; */
-    
+    height: 100%;   
  
 }
 
@@ -68,13 +69,6 @@ header {
     align-items: center;
   
 }
-
-/* .separation { 
-    padding-left: 2em;
-    display: flex;   
-    
-} */
-
 
 
 .last-links {
@@ -179,6 +173,7 @@ a {
     top: 60px; /* Ajustado para que no quede justo debajo del ícono */
     left: 0;
     z-index: 1000;
+   
 }
 
 .mobile-nav a {
@@ -198,7 +193,7 @@ a {
     display: flex;
 }
 
-/* Estilos específicos para pantallas pequeñas */
+/* Estilos específicos para celulares */
 @media (max-width: 760px) {
     .desktop-nav {
         display: none;
@@ -206,14 +201,52 @@ a {
     .menu-toggle-icon {
         display: block;
     }
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* width: 100%; */
+        margin: 0;
+    }
+
+    .card-container{
+        display: flex;
+
+        flex-wrap: wrap;
+    }
+    
+    footer div{
+    
+        display: flex;
+        flex-direction: column;   
+
+    }
 }
 
 
+/* Estilos específicos para tablet */
+@media screen and (max-width: 1070px) {
 
-/* .spacer {
-    width: 16px;
-    padding-left: 6em;
-} */
+    .img1 {
+        height: 12vh;
+        width: 12vh;
+    }
+
+    .primerDiv {
+        font-size: 1.5em;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+
+    .last-links {
+        gap: 5vw;
+        padding: 0;
+    }
+
+}
 
 /*-- Boton de Busqueda --*/
 
@@ -222,8 +255,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* width: 100%;
-    height: 20vh; */
+
     
 }
 
@@ -270,6 +302,9 @@ input[type="submit"]:hover {
     background-color: #45a049;
 }
 
+
+/*---------------------------------------------------------------------------------*/
+
 /*-- Carrucel --*/
 
 
@@ -294,7 +329,7 @@ input[type="submit"]:hover {
     100% {transform: translateX(-500%);}
 }
 
-* {box-sizing: border-box;} 
+/* * {box-sizing: border-box;}  */
 
 html {scroll-behavior: smooth;}
 
@@ -397,22 +432,22 @@ html {scroll-behavior: smooth;}
     }
 }
 
- 
 
 /*-- Card --*/
 
 .card-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly
 }
 
 .card {
-    flex-basis: calc(33.33% - 20px);
+    /* flex-basis: calc(33.33% - 20px); se vuelvo desproporcional la distribucion de las card*/
     margin-bottom: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     text-align: center;
     padding: 20px;
-    margin-left: 5px;
+    /* margin-left: 5px; le quito xq me genera un margen al costado cuando achico la pantalla */ 
+    width: 300px; /*agrego un ancho por defecto para todas las cartas*/
     
 }
 
@@ -443,8 +478,6 @@ footer {
     color: white;
     background-color: rgb(37, 78, 37);
     padding: 25px;
-    /* display: flex;
-    justify-content: space-between; */
     font-size: 14px;
     text-align: center;
     list-style: 24px;
@@ -466,7 +499,7 @@ footer a:hover {
 
 
 
-/*-----Registrate -------*/
+/*-----Registrate layout inicio-------*/
 
 #hero{
     display: flex;
@@ -477,33 +510,112 @@ footer a:hover {
     font-weight: bold;
     flex-direction: column;
     height: 90vh;
-    background-image: url('/Proyecto Final/img/capeletis.jpg'); /*para vincular con una imagen de afuera*/
+    background-image: url('/img/capeletis.jpg'); /*para vincular con una imagen de afuera*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    width: 100%;
 
 }
 
+iframe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 /*-----------------------Iniciar Sesion ------------------*/
+
+.background-image {
+    background-image: url(img/fondo.jpg);
+}
+
+.form-registro {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    border-radius: 8px;
+    width: fit-content;
+    height: fit-content;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    }
+
+    
+    button {
+        padding: 10px;
+        width: 48%;
+        cursor: pointer;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+    button[type="submit"] {
+        background-color: rgb(37, 78, 37);
+    }
+
+
+    /*-----------------------Iniciar Sesion ------------------*/
+
+.main-form{
+    background-image: url(img/fondo.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center;
+    max-width: 1350px;
+    margin:auto;
+    padding: 20px;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
 .form-registro{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
     font-weight: bold;
 }
 button[type="submit"] {
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
     background-color: rgb(37, 78, 37);
-    color: white;
+    color: #fff;
     border: none;
-    border-radius: 0.25rem;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
     cursor: pointer;
-    display: flex;
+   
 }
 
 button[type="submit"]:hover {
@@ -517,29 +629,44 @@ button[type="submit"]:hover {
     
 }
 
+.registro {
+    background-color: rgb(37, 78, 37);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.registro:hover {
+    background-color: #45a049;
+}
 
 .container-form {
-    background-color: #fff;
+    max-width: 400px; /* Ajusta el ancho según tus necesidades */
+    margin: 0 auto; /* Centra horizontalmente */
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
 
 }
 
+.container-form input[type="usuario"],
+.container-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
 
-label {
-    margin-bottom: 15px;
+.container-form label {
+    display: block;
     font-weight: bold;
-    width: 100%;
-    padding: 15px; 
-    font-size: 18px;    
-   
+    margin-bottom: 5px;
 }
-
-
-@media screen {
-    
-}
-

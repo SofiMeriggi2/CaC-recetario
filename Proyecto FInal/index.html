@@ -1,105 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="estilos.css" />
-    <link rel="icon" href="img/favicon.ico" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="img/favicon.ico">
     <title>Cuchara y Sazón</title>
 
     <!--Para tener los iconos de las redes-->
-    <script
-      src="https://kit.fontawesome.com/83ada6c78d.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/83ada6c78d.js" crossorigin="anonymous"></script>
     <!--Para tener las fuentes-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
 
-  <body>
+</head>
+
+<body>
     <header>
-      <section class="container">
-        <nav class="primerDiv">
-          <a href="index1.html">
-            <img src="img/logo_trial.png" class="img1" />
-          </a>
+        <section class="container">        
+            <nav class="primerDiv">
+                <a href="index.html">
+                    <img src="img/logo_trial.png" class="img1">
+                </a>     
+                
+                <!--Navegador de Escritorio-->
+                <div class="last-links desktop-nav">
+                    <div class="dropdown">
+                        <a href="" class="dropbtn">Categorías</a>
+                        <div class="dropdown-content">
+                            <a href="">Panadería</a>
+                            <a href="">Pastelería</a>
+                            <a href="">Carnes</a>
+                            <a href="">Pastas</a>
+                            <a href="">Low cost</a>
+                        </div>
+                    </div>                
+                    <a href="quienes_somos.html">Quienes Somos</a>
+                    <!-- <span class="spacer"></span> -->
+                    <a href="iniciar_sesion.html">Iniciar Sesion</a>        
+                </div>
 
-          <!--Navegador de Escritorio-->
-          <div class="last-links desktop-nav">
-            <div class="dropdown">
-              <a href="" class="dropbtn">Categorías</a>
-              <div class="dropdown-content">
-                <a href="">Panadería</a>
-                <a href="">Pastelería</a>
-                <a href="">Carnes</a>
-                <a href="">Pastas</a>
-                <a href="">Low cost</a>
-              </div>
-            </div>
-            <a href="contacto.html">Quienes Somos</a>
-            <!-- <span class="spacer"></span> -->
-            <a href="iniciar_sesion.html">Iniciar Sesion</a>
-          </div>
+                <!-- Menu Hamburgueza-->
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="menu-toggle-icon">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <div class="last-links mobile-nav">
+                    <div class="dropdown">
+                        <a href="" class="dropbtn">Categorías</a>
+                        <div class="dropdown-content">
+                            <a href="">Panadería</a>
+                            <a href="">Pastelería</a>
+                            <a href="">Carnes</a>
+                            <a href="">Pastas</a>
+                            <a href="">Low cost</a>
+                        </div>
+                    </div>                
+                    <a href="quienes_somos.html">Quienes Somos</a>
+                     <!-- <span class="spacer"></span>  -->
+                    <a href="iniciar_sesion.html">Iniciar Sesion</a>        
+                </div>
+         
+            </nav>        
+        
+        </section>
 
-          <!-- Menu Hamburgueza-->
-          <input type="checkbox" id="menu-toggle" class="menu-toggle" />
-          <label for="menu-toggle" class="menu-toggle-icon">
-            <i class="fas fa-bars"></i>
-          </label>
-          <div class="last-links mobile-nav">
-            <div class="dropdown">
-              <a href="" class="dropbtn">Categorías</a>
-              <div class="dropdown-content">
-                <a href="">Panadería</a>
-                <a href="">Pastelería</a>
-                <a href="">Carnes</a>
-                <a href="">Pastas</a>
-                <a href="">Low cost</a>
-              </div>
-            </div>
-            <a href="contacto.html">Quienes Somos</a>
-            <!-- <span class="spacer"></span>  -->
-            <a href="iniciar_sesion.html">Iniciar Sesion</a>
-          </div>
-        </nav>
-      </section>
     </header>
 
+
     <main>
-      <section class="container">
-        <div class="items-search">
-          <h1>Recetas 100% Faciles</h1>
-          <form action="#" method="get" class="search_form">
-            <div id="input-search">
-              <input
-                type="text"
-                id="search"
-                name="search"
-                placeholder="Buscá tu receta"
-              />
-              <a id="a-search" href="detalle-receta.html"
-                ><i class="fas fa-search"></i
-              ></a>
+
+
+        <section class="container">
+            <div class="items-search">
+                <h1>Recetas 100% Faciles</h1>
+                <form action="#" method="get" class="search_form">
+                    <div id="input-search">
+                    <input type="text" id="search" name="search" placeholder="Buscá tu receta">
+                    <a id="a-search" href="detalle-receta.html"><i class="fas fa-search"></i></a>
+                    
+                    </div>
+                </form>
             </div>
-          </form>
-        </div>
-      </section>
 
-      <!--Carrucel-->
+        </section>
 
-      <div class="wrapper">
+
+            <!--Carrucel-->
+            <div class="wrapper">
         <ul class="slides">
           <li class="slide" id="slide1">
             <a href="#">
@@ -147,69 +141,66 @@
         </ul>
       </div>
 
-      <section class="container">
-        <br /><br /><br />
-        <section class="container"></section>
-        <div class="card-container">
-          <div class="card">
-            <a href="detalle-receta.html">
-              <img
-                src="img/pollo_al_horno_peruano_73603_orig.jpg"
-                alt="Card 1"
-              />
-              <h2>Pollo al horno</h2>
-            </a>
-          </div>
-          <div class="card">
-            <a href="detalle-receta.html">
-              <img
-                src="img/Tarta-de-verduras-grilladas-con-Queso-Untable-Por-Salut-Light.jpg"
-                alt="Card 2"
-              />
-              <h2>Tarta de verduras</h2>
-            </a>
-          </div>
-          <div class="card">
-            <a href="detalle-receta.html">
-              <img
-                src="img/cheesecake-facil-con-leche-condensada-2000-4160526441114bf3ad8f3409586a2c8a.jpg"
-                alt="Card 3"
-              />
-              <h2>Cheesecake de frutos rojos</h2>
-            </a>
-          </div>
-        </div>
-      </section>
 
-      <br /><br />
+              <!--Card-->
+        
+            <section class="container">
+            <br><br><br>
+            
+            <div class="card-container">
+                <div class="card">
+                    <a href="detalle-receta.html">
+                        <img src="img/pollo_al_horno_peruano_73603_orig.jpg" alt="Card 1">
+                        <h2>Pollo al horno</h2>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="detalle-receta.html">
+                        <img src="img/Tarta-de-verduras-grilladas-con-Queso-Untable-Por-Salut-Light.jpg" alt="Card 2">
+                        <h2>Tarta de verduras</h2>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="detalle-receta.html">
+                        <img src="img/cheesecake-facil-con-leche-condensada-2000-4160526441114bf3ad8f3409586a2c8a.jpg"
+                            alt="Card 3">
+                        <h2>Cheesecake de frutos rojos</h2>
+                    </a>
+                </div>
+            </div>
+        </section>
 
-      <section class="container">
-        <div id="hero">
-          <h2>Queres recibir Recetas!</h2>
-          <a href="registrate.html"
-            ><input type="submit" value="Registrate"
-          /></a>
-        </div>
-      </section>
+        <br><br>
+
+        <section class="container">
+            <div id="hero">
+                <h2>Queres recibir Recetas!</h2>
+                <a href="registrate.html"><input type="submit" value="Registrate"></a>
+            </div>
+        </section>
+
+
     </main>
     <footer>
-      <section class="container">
+        <section class="container">
+        <div>
         <a href="">Terminos y condiciones</a>
         <a href="">Preguntas Frecuentes</a>
         <a href="">Ayuda</a>
         <a href=""><i class="fas fa-question-circle"></i></a>
+        </div>
         <div class="redes-sociales">
-          <a href="https://instagram.com"
-            ><i class="fa-brands fa-instagram"></i
-          ></a>
-          <a href="https://facebook.com"
-            ><i class="fa-brands fa-facebook"></i
-          ></a>
-          <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
         </div>
 
         <p>&copy; Todos los derechos reservados</p>
-      </section>
+
+    </section>
+
     </footer>
-  </body>
+
+</body>
+
 </html>
