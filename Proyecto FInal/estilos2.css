@@ -218,7 +218,7 @@ a {
     footer div{
     
         display: flex;
-        flex-direction: column;        
+        flex-direction: column;   
 
     }
 }
@@ -304,67 +304,65 @@ input[type="submit"]:hover {
 
 /*-- Carrucel --*/
 
-.carousel{
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.carousel-inner {
     display: flex;
-    flex-direction: row;
-    animation: slide 5s infinite alternate;
+    width: 300%;
+    /* height: 500px; */
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
     width: 100%;
-    justify-content: center;
+    height: 40%;
 }
-
-.carousel-item.active {
-    opacity: 1;
-}
-
-.carousel-item  {
-    opacity: 1;
-}
-
-.carousel-buttons{
-    padding: absolute;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    bottom: 50px;
-    gap: 10px;
-}
-
-.carousel-buttons label{
-    width: 20px;
-    height: 20px;
-    background-color: rgb(205, 36, 36);
-    border-radius: 50%;
-    opacity: 0.5;
-    cursor: pointer;
-    z-index: 1;
-    transition: 300ms ease-in-out;
-} 
-
-.carousel-buttons label:hover{
-    scale: 1.2;
-    opacity: 1;
-}
-
-input[type='radio'].controller:checked
 
 .carousel-item img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 40vh;
+    display: block;
+    border-radius: 10px;
 }
 
+input[name="slides"] {
+    display: none;
+}
 
-  @keyframes slide {
-    0% {
-      transform: translateX(0);
-    }
-    50% {
-      transform: translateX(-100%);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
+#slide1:checked ~ .carousel-inner {
+    transform: translateX(0%);
+}
+
+#slide2:checked ~ .carousel-inner {
+    transform: translateX(-33.333%);
+}
+
+#slide3:checked ~ .carousel-inner {
+    transform: translateX(-66.666%);
+}
+
+.nav-carrucel {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.nav-btn-carr {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(37, 78, 37);;
+    border-radius: 50%;
+    margin: 5%;
+    cursor: pointer;
+}
+
 
 /*-- Card --*/
 
