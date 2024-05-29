@@ -4,6 +4,7 @@
     margin:0;
     font-family: 'Roboto', sans-serif;
   
+  
 }
 
 h1{
@@ -81,6 +82,7 @@ header {
 .last-links a {
     color: rgb(37, 78, 37);
     font-family: Arial,sans-serif;
+    text-decoration: none;
 }
 
 a {
@@ -249,6 +251,24 @@ a {
 }
 
 /*-- Boton de Busqueda --*/
+
+.items-search h1{
+    animation: appear 6s ease forwards;
+    opacity: 0;
+}
+
+@keyframes appear {
+
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+    
+}
+
 
 .search_form{
     display: flex;
@@ -510,7 +530,7 @@ footer a:hover {
     font-weight: bold;
     flex-direction: column;
     height: 90vh;
-    background-image: url('/img/capeletis.jpg'); /*para vincular con una imagen de afuera*/
+    background-image: url('img/capeletis.jpg'); /*para vincular con una imagen de afuera*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -526,10 +546,10 @@ iframe{
 
 
 /*-----------------------Iniciar Sesion ------------------*/
-
+/* 
 .background-image {
     background-image: url(img/fondo.jpg);
-}
+} */
 
 .form-registro {
     font-family: Arial, sans-serif;
