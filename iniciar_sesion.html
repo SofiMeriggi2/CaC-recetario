@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="/static/css/estilos.css">
+    <link rel="icon" href="/static/img/favicon.ico">
     <title>Cuchara y Sazón</title>
 
     <!--Para tener los iconos de las redes-->
@@ -27,7 +27,7 @@
         <section class="container">        
             <nav class="primerDiv">
                 <a href="index.html">
-                    <img src="img/logo_trial.png" class="img1">
+                    <img src="/static/img/logo_trial.png" class="img1">
                 </a>     
                 
                 <!--Navegador de Escritorio-->
@@ -73,26 +73,31 @@
         </section>
 
     </header>
-
-
+    
     <main>
-        <section class="container">
-        <h2>Detalle de las Recetas</h2>
-        <div> 
-            <h2>Pollo al Horno Peruano</h2>
-            <h3>Ingredientes: </h3>
-        <ul>
-            <li>Pollo</li>
-            <li>Condimentos</li>
-        </ul>
-        </div>
+        <section class="main-form">
+            <div class="container-form">
+                <h2>Iniciar Sesion: </h2>
+                <form action="" class="form-registro">
+                    <label for="usuario">Usuario:
+                        <input type="usuario" name="usuario" placeholder="Ingrese su usuario">
+                    </label>
+                
+                    <label for="clave">Contraseña:
+                        <input type="password" name="clave" placeholder="Ingrese su contraseña">
+                    </label>   
+                    
+                    <div class="button-inicio">
+                        <input type="submit" value="Ingresar">
+                        <br><br><br>
+                        <a class="registro" href="registrate.html">Regístrate</a>
+                    </div>
+                </form>
+            </div>
         </section>
 
 
     </main>
- 
-
-   
     <footer>
         <a href="">Terminos y condiciones</a>
         <a href="">Preguntas Frecuentes</a>
@@ -110,6 +115,7 @@
 
     </footer>
 
+    <script src="/static/js/index.js"></script>
 </body>
 
 </html>

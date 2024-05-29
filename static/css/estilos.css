@@ -530,7 +530,7 @@ footer a:hover {
     font-weight: bold;
     flex-direction: column;
     height: 90vh;
-    background-image: url('img/capeletis.jpg'); /*para vincular con una imagen de afuera*/
+    background-image: url("../img/capeletis.jpg"); /*para vincular con una imagen de afuera*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -546,10 +546,6 @@ iframe{
 
 
 /*-----------------------Iniciar Sesion ------------------*/
-/* 
-.background-image {
-    background-image: url(img/fondo.jpg);
-} */
 
 .form-registro {
     font-family: Arial, sans-serif;
@@ -602,13 +598,13 @@ select {
     /*-----------------------Iniciar Sesion ------------------*/
 
 .main-form{
-    background-image: url(img/fondo.jpg);
+    background-image: url("../img/fondo.jpg");
     background-repeat: no-repeat; 
     background-size: cover; 
     background-position: center;
     max-width: 1350px;
     margin:auto;
-    padding: 20px;
+    padding: 10px;
     justify-content: center;
     width: 100%;
     height: 100%;
@@ -616,6 +612,31 @@ select {
     justify-content: center; 
     align-items: center; 
 }
+
+.container-form {
+   /*max-width: 400px;  Ajusta el ancho según tus necesidades */
+    margin: 0 auto; /* Centra horizontalmente */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;   
+
+}
+
+.container-form input{
+    /* width: 100%; */
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.container-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
 
 .form-registro{
     display: flex;
@@ -626,67 +647,38 @@ select {
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
     font-weight: bold;
-}
-button[type="submit"] {
-    background-color: rgb(37, 78, 37);
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 14px;
-    cursor: pointer;
-   
+    width: 400px;
 }
 
-button[type="submit"]:hover {
-    background-color: #45a049;
-}
 
-#button-inicio{
+.button-inicio{
     display: flex;
-    align-items: center;
-   
+    align-items: center;   
     
 }
 
-.registro {
-    background-color: rgb(37, 78, 37);
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 14px;
+
+/*---------------Boton para scroll--------------*/
+
+#scrollToTopButton{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
     cursor: pointer;
-    margin-left: 5px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
 }
 
-.registro:hover {
-    background-color: #45a049;
-}
+/*---------------Error--------------*/
 
-.container-form {
-    max-width: 400px; /* Ajusta el ancho según tus necesidades */
-    margin: 0 auto; /* Centra horizontalmente */
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background-color: #f9f9f9;
-    font-family: Arial, sans-serif;
-
-}
-
-.container-form input[type="usuario"],
-.container-form input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 14px;
-}
-
-.container-form label {
-    display: block;
-    font-weight: bold;
+.error{
+    color: red;
     margin-bottom: 5px;
+    font-size: 12px;
 }
+
+
